@@ -118,3 +118,44 @@
     margin: 0 auto;
     border: 1px solid #000000;
 }
+.presented{
+    margin-top: 200px;
+    margin-bottom: 370px;
+}
+.circule{
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background: #FFA501;
+}
+.presented-name{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.presented-name__text{
+    color: #000;
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+}
+.presented__title{
+    max-width: 532px;
+    padding-bottom: 25px;
+    color: #000;
+    font-size: 48px;
+    line-height: 60px;
+}
+.presented__button{
+    width: 135px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 14px;
+}
+.presented__button__active,
+.presented__button:hover{
+    background: #FFA501;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
