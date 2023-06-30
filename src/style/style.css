@@ -333,3 +333,9 @@
     font-size: 14px;
     margin-top: 40px;
 }
+.text-field__error-name,
+.text-field__error-email{
+    color: #ec0000;
+    display: none;
+    max-width: 280px;
+}

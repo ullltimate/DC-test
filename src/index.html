@@ -226,17 +226,19 @@
                                 <div class="text-field text-field__floating">
                                     <input class="text-field__input" type="name" id="name" name="name" value="Иван">
                                     <label class="text-field__label text" for="name">Ваше имя</label>
+                                    <p class="text-field__error-name">Поле обязательно для заполнения и должно состоять только из букв</p>
                                 </div>
                                 <div class="text-field text-field__floating">
                                     <input class="text-field__input" type="email" id="email" name="email">
                                     <label class="text-field__label text" for="email">Ваша почта</label>
+                                    <p class="text-field__error-email">Поле обязательно для заполнения идолжно иметь вид example@tutu.com</p>
                                 </div>
                             </div>
                             <div class="text-field text-field__floating">
                                 <textarea class="text-field__textarea" id="massage" name="massage"></textarea>
                                 <label class="text-field__label text" for="massage">Ваше сообщение</label>
                             </div>
-                            <button class="contacts-form__button title">Отправить сообщение</button>
+                            <button class="contacts-form__button title" type="submit">Отправить сообщение</button>
                         </form>
                     </div>
                 </div>
@@ -245,5 +247,6 @@
     </section>
     <div class="main-open"></div>
     <script src="./scripts/burger-menu.js"></script>
+    <script src="./scripts/form.js"></script>
 </body>
 </html>
