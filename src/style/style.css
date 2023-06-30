@@ -1,0 +1,438 @@
+@import url('./fonts.css');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+.wrapper{
+    max-width: 1920px;
+    margin: auto;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.header-wrap-menu{
+    width: 345px;
+    height: 800px;
+    background: #FFA501;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    transform: translateX(-100%);
+    transition: .2s all linear;
+}
+.header-wrap-menu_active{
+    transform: translateX(0);
+}
+.header__burger{
+    text-align: right;
+    padding: 20px 30px 0 0;
+}
+.header__burger__img{
+    cursor: pointer;
+    overflow-x: hidden; 
+    overflow-y:hidden;
+}
+.main__open-menu{
+    background-color: #FFFFFF;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+}
+.header__list{
+    list-style-type: none;
+    margin-top: 110px;
+    margin-bottom: 300px;
+    padding-left: 15px;
+}
+.header__link{
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    line-height: 50px;
+}
+.header__link::before{
+    content: '○';
+    color: #000000;
+    margin-right: 20px;
+}
+.title{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+.nav-menu__img__close{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    overflow-x: hidden; 
+    overflow-y:hidden;
+}
+.social-media{
+    text-align: center;
+}
+.social-media__link{
+    text-decoration: none;
+}
+.social-media__img{
+    margin-right: 15px;
+}
+.main{
+    height: 800px;
+    position: relative;
+    background: url('../assets/img/Background.jpg'), lightgray 0px -108.515px / 100% 160.25% no-repeat;
+}
+.side-panel{
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 376px;
+    left: -110px;
+}
+.side-panel__title{
+    color: #000;
+    font-size: 16px;
+}
+.side-panel__line{
+    width: 70px;
+    height: 2px;
+    background: #000000;
+    margin: 0 15px;
+}
+.content{
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 1px solid #000000;
+}
+.presented{
+    margin-top: 200px;
+    margin-bottom: 490px;
+}
+.circule{
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background: #FFA501;
+}
+.presented-name,
+.benefit-subtitle,
+.contacts-name{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.benefit-subtitle{
+    justify-content: center;
+}
+.presented-name__text,
+.benefit-subtitle__text,
+.contacts-name__text{
+    color: #000;
+    font-size: 16px;
+}
+.presented-name__text,
+.contacts-name__text{
+    position: absolute;
+    left: 10px;
+}
+.benefit-subtitle__text{
+    position: absolute;
+}
+.presented__title{
+    max-width: 532px;
+    padding-bottom: 25px;
+    color: #000;
+    font-size: 48px;
+    line-height: 60px;
+}
+.presented__button{
+    width: 135px;
+    height: 45px;
+    background: transparent;
+    border: none;
+    color: #000;
+    font-size: 14px;
+}
+.presented__button__active,
+.presented__button:hover{
+    background: #FFA501;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.benefit{
+    margin-bottom: 75px;
+}
+.benefit__title,
+.contacts__title{
+    color: #000;
+    font-size: 36px;
+    line-height: 60px;
+}
+.benefit__title{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.benefit__line,
+.contacts__line{
+    width: 60px;
+    height: 3px;
+    background: #FFA501;
+}
+.benefit__line{
+    margin: 0 auto;
+}
+.benefit-content-wrap,
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.benefit-content-wrap{
+    margin-top: 60px;
+}
+.content-subtitle{
+    display: flex;
+    align-items: center;
+}
+.min-circule{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background: #FFA501;
+    margin-right: 35px;
+}
+.benefit-content{
+    position: relative;
+}
+.benefit-content__big-line{
+    width: 1px;
+    height: 343px;
+    background: #000000;
+    position: absolute;
+    left: 7px;
+    top: 17px;
+}
+.benefit-content__small-line{
+    width: 42px;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    left: 7px;
+}
+.small-line__line1{
+    top: 70px;
+}
+.small-line__line2{
+    top: 243px;
+}
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;   
+}
+.content-name{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 49px;
+}
+.circle-wrap{
+    position: relative;
+}
+.circle__img{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.name__title{
+    color: #000;
+    font-size: 14px;
+}
+.name__subtitle{
+    color: #000;
+    font-size: 12px;
+}
+.name-wrap{
+    margin-left: 20px;
+}
+.content-descr{
+    max-width: 375px;
+    color: #000;
+    font-size: 12px;
+    margin-left: 49px;
+    margin-top: 12px;
+    margin-bottom: 70px;
+}
+.contacts{
+    margin-bottom: 90px;
+}
+.contacts__text{
+    color: #000;
+    font-size: 14px;
+    padding: 20px 0;
+}
+.contacts-link__img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.text-fields-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.text-field__floating{
+    position: relative;
+}
+.text-field__floating:last-child{
+    margin-left: 25px;
+}
+.text-field__input{
+    width: 280px;
+    height: 45px;
+    border: 1px solid #000;
+    background: rgba(196, 196, 196, 0.00);
+    padding-left: 20px;
+}
+.text-field__label{
+    position: absolute;
+    left: 12px;
+    top: -8px;
+    background: #FFFFFF;
+    color: #000;
+    font-size: 12px;
+    padding: 0 8px;
+}
+.text-field__textarea{
+    width: 585px;
+    height: 190px;
+    border: 1px solid #000;
+    background: rgba(196, 196, 196, 0.00);
+    padding-left: 20px;
+}
+.contacts-form__button{
+    width: 219px;
+    height: 45px;
+    background: #FFA501;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #000;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.text-field__error-name,
+.text-field__error-email{
+    color: #ec0000;
+    display: none;
+    max-width: 280px;
+}
+.main__img{
+    display: none;
+}
+@media screen and (max-width: 1330px) {
+    .side-panel{
+        display: none;
+    }
+    .main{
+        background: url('../assets/img/Background.jpg') 40% 50% no-repeat;
+    }
+    .presented{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .text-field__floating:last-child{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .text-fields-wrap{
+        display: block;
+    }
+    .text-field__textarea{
+        width: 300px;
+        height: 143px;
+    }
+    .text-field__input{
+        width: 300px;
+    }
+    .contacts__img{
+        display: none;
+    }
+    .header__list{
+        margin-bottom: 50px;
+        padding-left: 0;
+    }
+    .header-wrap-menu{
+        width: 250px;
+        height: 640px;
+    }
+    .header__link::before{
+        margin-right: 5px;
+    }
+    .main__img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .presented{
+        margin-bottom: 420px;
+    }
+}
+@media screen and (max-width: 376px){
+    .main{
+        height: 640px;
+    }
+    .presented__title{
+        font-size: 26px;
+        padding-bottom: 32px;
+        line-height: 40px;
+        max-width: 280px;
+    }
+    .presented{
+        margin-bottom: 287px;
+    }
+    .benefit__title{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    .content-descr{
+        margin-bottom: 55px;
+    }
+    .benefit-content-wrap{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contacts{
+        margin: 0 10px 10px 10px;
+    }
+    .contacts__title{
+        font-size: 24px;
+    }
+    .contacts-form__button{
+        display: block;
+        margin: 40px auto;
+    }
+}
+@media screen and (max-width: 345px){
+    .content-descr{
+        margin-bottom: 40px;
+    }
+}
+@media screen and (max-width: 320px){
+    .main{
+        background: url('../assets/img/Background-mini.png') no-repeat;
+    }
+}
