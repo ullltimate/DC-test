@@ -129,7 +129,8 @@
     background: #FFA501;
 }
 .presented-name,
-.benefit-subtitle{
+.benefit-subtitle,
+.contacts-name{
     display: flex;
     align-items: center;
     position: relative;
@@ -138,11 +139,13 @@
     justify-content: center;
 }
 .presented-name__text,
-.benefit-subtitle__text{
+.benefit-subtitle__text,
+.contacts-name__text{
     color: #000;
     font-size: 16px;
 }
-.presented-name__text{
+.presented-name__text,
+.contacts-name__text{
     position: absolute;
     left: 10px;
 }
@@ -172,24 +175,33 @@
 .benefit{
     margin-bottom: 75px;
 }
-.benefit__title{
+.benefit__title,
+.contacts__title{
     color: #000;
     font-size: 36px;
     line-height: 60px;
-    text-align: center;
-    margin-bottom: 25px;
 }
-.benefit__line{
+.benefit__title{
+    margin-bottom: 25px;
+    text-align: center;
+}
+.benefit__line,
+.contacts__line{
     width: 60px;
     height: 3px;
     background: #FFA501;
-    margin: 0 auto;
-    margin-bottom: 60px;
 }
-.benefit-content-wrap{
+.benefit__line{
+    margin: 0 auto;
+}
+.benefit-content-wrap,
+.contacts{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.benefit-content-wrap{
+    margin-top: 60px;
 }
 .content-subtitle{
     display: flex;
@@ -262,4 +274,62 @@
     margin-left: 49px;
     margin-top: 12px;
     margin-bottom: 70px;
+}
+.contacts{
+    margin-bottom: 90px;
+}
+.contacts__text{
+    color: #000;
+    font-size: 14px;
+    padding: 20px 0;
+}
+.contacts-link__img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.text-fields-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.text-field__floating{
+    position: relative;
+    margin-right: 25px;
+}
+.text-field__floating:last-child{
+    margin-right: 0;
+}
+.text-field__input{
+    width: 280px;
+    height: 45px;
+    border: 1px solid #000;
+    background: rgba(196, 196, 196, 0.00);
+    padding-left: 20px;
+}
+.text-field__label{
+    position: absolute;
+    left: 12px;
+    top: -8px;
+    background: #FFFFFF;
+    color: #000;
+    font-size: 12px;
+    padding: 0 8px;
+}
+.text-field__textarea{
+    width: 585px;
+    height: 190px;
+    border: 1px solid #000;
+    background: rgba(196, 196, 196, 0.00);
+    padding-left: 20px;
+}
+.contacts-form__button{
+    width: 219px;
+    height: 45px;
+    background: #FFA501;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #000;
+    font-size: 14px;
+    margin-top: 40px;
 }
